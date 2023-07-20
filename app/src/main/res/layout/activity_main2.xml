@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/yesilbackground"
+    android:padding="10dp"
+    >
+
+    <com.example.md_solitaire.HideView
+        android:id="@+id/hide_view"
+        android:layout_width="@dimen/card_width"
+        android:layout_height="@dimen/card_heigh"
+        android:src="@drawable/bos"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.example.md_solitaire.ShowView
+        android:id="@+id/show_view"
+        android:layout_width="@dimen/card_width"
+        android:layout_height="@dimen/card_heigh"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/bos_kart"
+        app:layout_constraintLeft_toRightOf="@+id/hide_view"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toRightOf="@id/show_view"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.example.md_solitaire.StackView
+            android:id="@+id/stack0"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_heigh"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:tag="1"
+            app:srcCompat="@drawable/bos_as" />
+
+        <com.example.md_solitaire.StackView
+            android:id="@+id/stack1"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_heigh"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:tag="2"
+            app:srcCompat="@drawable/bos_as" />
+
+        <com.example.md_solitaire.StackView
+            android:id="@+id/stack2"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_heigh"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:tag="3"
+            app:srcCompat="@drawable/bos_as" />
+        <com.example.md_solitaire.StackView
+            android:id="@+id/stack3"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_heigh"
+            android:tag="4"
+            app:srcCompat="@drawable/bos_as" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hide_view">
+
+        <com.example.md_solitaire.DeckView
+            android:id="@+id/deck0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2" />
+
+        <com.example.md_solitaire.DeckView
+            android:id="@+id/deck1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2" />
+
+        <com.example.md_solitaire.DeckView
+            android:id="@+id/deck2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2" />
+
+        <com.example.md_solitaire.DeckView
+            android:id="@+id/deck3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2" />
+
+        <com.example.md_solitaire.DeckView
+            android:id="@+id/deck4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2" />
+
+        <com.example.md_solitaire.DeckView
+            android:id="@+id/deck5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2" />
+
+        <com.example.md_solitaire.DeckView
+            android:id="@+id/deck6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -33,6 +33,6 @@ public class Acilis_Ekrani extends AppCompatActivity {
                 finish();
 
             }
-        }, 5000);
+        }, 0);
     }
 }
